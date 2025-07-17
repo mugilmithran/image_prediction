@@ -4,7 +4,7 @@ import tensorflow as tf
 from PIL import Image, ImageOps
 
 # Load the pre-trained model
-model = tf.keras.models.load_model("mnist_nn_model.h5")
+model = tf.keras.models.load_model("mnist_nn_model.keras")
 
 # Title
 st.title("🧠 MNIST Digit Classifier")
