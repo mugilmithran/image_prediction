@@ -2,9 +2,10 @@ import streamlit as st
 import numpy as np
 import tensorflow as tf
 from PIL import Image, ImageOps
+from tensorflow.keras.models import load_model
 
 # Load the pre-trained model
-model = tf.keras.models.load_model("mnist_nn_model.keras")
+model = load_model("mnist_nn_model.h5")
 
 # Title
 st.title("🧠 MNIST Digit Classifier")
